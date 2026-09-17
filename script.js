@@ -3,7 +3,7 @@
    ============================================================
    ⚠️ SIN PRECIOS. No publican carta con precios en ningún canal y Google
    tampoco recoge un rango de gasto para este local. Los productos listados
-   son los que se ven en SUS PROPIAS FOTOS y los que nombran sus reseñas
+   son los que se ven en SUS PROPIAS FOTOS y los que nombran nuestras reseñas
    reales. Ninguno inventado, y ninguno con nombre de fantasía: van
    descritos tal como se ven. Pedirle la carta al local para cargar precios
    y nombres propios.
@@ -30,7 +30,7 @@ const MENU = {
       },
       {
         "n": "Helado",
-        "d": "\"Los helados buenísimos y contundentes\" — cita textual de una reseña real"
+        "d": "\"Los helados buenísimos y contundentes\" — cita textual de una reseña"
       }
     ]
   },
