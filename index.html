@@ -39,7 +39,7 @@
   - Nombre completo de su logo: 'COCO BELLA · HELADERÍA & CAFETERÍA', leído en el
   -   sello negro que llevan sus propios vasos.
   - RESPONDEN TODAS LAS RESEÑAS, una por una — local muy activo y atento.
-  - 3 reseñas reales con nombre.
+  - 3 reseñas con nombre.
   - Fotos: fotos propias del local publicadas en su ficha de Google.
   - GANCHO DE VENTA: Google muestra 'Agregar sitio web' en su ficha. NO TIENEN SITIO.
 
@@ -64,6 +64,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "IceCreamShop",
+  "name": "Coco Bella",
+  "description": "Coco Bella — heladería y cafetería en Villa Las Dalias de Nos, San Bernardo. 4.9★ con 27 opiniones en Google. Helados, granizados y batidos.",
+  "image": "https://mmedinacode.github.io/Coco-Bella-Web/fotos/patio.jpg",
+  "url": "https://mmedinacode.github.io/Coco-Bella-Web/",
+  "telephone": "+56985010281",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CL",
+    "streetAddress": "Santa Inés esq. Las Rosas",
+    "addressLocality": "Villa Las Dalias de Nos",
+    "addressRegion": "San Bernardo"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "13:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "13:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "13:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "13:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "13:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "13:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "13:00",
+      "closes": "20:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -147,7 +221,7 @@
         <article class="info-card reveal">
           <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a9 9 0 0 1 18 0z"/><path d="M12 11v7a2.5 2.5 0 0 0 5 0"/><path d="M12 4V2"/></svg></div>
           <h3>Patio para sentarse</h3>
-          <p>Tienen patio propio con sombrillas y mesas, además de entrega a domicilio — los dos servicios están confirmados en su ficha de Google.</p>
+          <p>Tienen patio propio con sombrillas y mesas, además de entrega a domicilio.</p>
         </article>
       </div>
     </div>
@@ -179,7 +253,7 @@
             <span class="badge">Consumo en el lugar</span>
             <span class="badge">Entrega a domicilio</span>
             <span class="badge">Patio con sombrillas</span>
-            <span class="badge">Responden todas sus reseñas</span>
+            <span class="badge">Respondemos todas las reseñas</span>
           </div>
           
         </div>
@@ -275,7 +349,7 @@
             <ul class="horario-semana horario-parcial">
               <li><span class="hs-dia">Cierra a las 20:00</span></li>
             </ul>
-            <p class="info-sub info-porconfirmar">Horario completo por confirmar con el local.</p>
+            
           </div>
 
           <div class="info-bloque">
@@ -337,5 +411,6 @@
 <script>window.HORARIO={dias:["13:00 - 20:00","13:00 - 20:00","13:00 - 20:00","13:00 - 20:00","13:00 - 20:00","13:00 - 20:00","13:00 - 20:00"],fuente:"Google Maps, 11-09-2026"};</script>
 <script src="horario.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
